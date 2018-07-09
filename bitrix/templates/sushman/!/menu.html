@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Сушман: меню</title>
+        <meta charset="utf-8" />
+        <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="[?description]" />
+        <meta name="keywords" content="[?keywords]" />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <link media="all" rel="stylesheet" href="/css/reset.css" />
+        <link media="all" rel="stylesheet" href="/css/jquery.selectBox.css" />
+        <link media="all" rel="stylesheet" href="/css/idangerous.swiper.css" />
+        <link media="all" rel="stylesheet" href="/css/style.css?v=1.0" />   
+        <!--[if lt IE 9]><link rel="stylesheet" href="/css/style-ie8.css" type="text/css" media="all" /><![endif]-->    
+        <script type="text/javascript" src="/js/libs/jquery-1.11.0.min.js"></script>           
+        <script type="text/javascript" src="/js/libs/jquery.placeholder.js"></script>
+        <script type="text/javascript" src="/js/libs/jquery.mb.browser.min.js"></script>
+        <script type="text/javascript" src="/js/libs/jquery.imgpreload.min.js"></script>
+        <script type="text/javascript" src="/js/libs/jquery.selectBox.js"></script>
+        <script type="text/javascript" src="/js/libs/idangerous.swiper.js"></script>
+        <script type="text/javascript" src="/js/libs/idangerous.swiper.js"></script>
+        <script type="text/javascript" src="/js/libs/idangerous.swiper.js"></script>
+        <script type="text/javascript" src="/js/libs/jquery.inputmask.bundle.js"></script>
+        <script type="text/javascript" src="/js/libs/jquery.validate.min.js"></script>
+        <script type="text/javascript" src="/js/libs/fancybox/jquery.fancybox.js"></script>
+        <script type="text/javascript" src="/js/main.js"></script>
+        <!--[if gte IE 9]>
+          <style type="text/css">
+            .grad {
+               filter: none;
+            }
+          </style>
+        <![endif]-->        
+        <!--[if lt IE 9]>
+        <script type="text/javascript" src="/js/libs/html5shiv.js"></script>
+        <script type="text/javascript" src="/js/libs/css3-mediaqueries.js"></script>
+        <![endif]-->    
+    </head>
+    <body class="inner">
+        <div id="wrapper"><div id="inner-wrapper">
+                <div id="sitebg"></div>
+
+                <header>
+                    <div class="center-col">
+                        <a id="logo" href="/" title="На главную"><span>Сушманн:Пицманн</span></a>
+                        <div class="info-block">
+                            <div class="vk-block"><span class="semi">Официальная группа Вконтакте</span><br/><a href="http://vk.com/nvkz756300">vk.com/nvkz756300</a></div>
+                            <div class="phone-block"><span class="semi">Доставка по тел.:</span><br/><span class="phone">8-987-654-3210</span></div>
+                        </div>
+                        <div class="center-block">
+                            <select name="city"><option value="nkz" selected>Новокузнецк</option><option value="kem">Кемерово</option><option value="nsk">Новосибирск</option></select>
+                            <br/>
+                            <a id="promo-link" href="#"><span class="bg"></span><span>Модная доставка</span></a>
+                        </div>
+                        <div class="head-line"></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="center-col">
+                        <div class="mainmenu">
+                            <ul>
+                                <li><a href="#" class="item-menu">Меню</a></li>
+                                <li><a href="#" class="item-specials">Акции</a></li>
+                                <li><a href="#" class="item-delivery">Доставка</a></li>
+                                <li><a href="#" class="item-about">О компании</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </header>
+                
+                <section class="menu">
+                    <div class="center-col">
+                        <div class="left-col">
+                            <div class="left-menu">
+                                <div class="title">Меню</div>
+                                <ul>
+                                    <li><a href="#">Сеты</a></li>
+                                    <li><a href="#">Суши</a></li>
+                                    <li class="active">
+                                        <a href="#">Роллы</a>
+                                        <ul>
+                                            <li><a href="#">Горячие роллы</a></li>
+                                            <li><a href="#">Запеченные</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Пицца</a></li>
+                                    <li><a href="#">Лапша WOK</a></li>
+                                    <li><a href="#">Горячие блюда</a></li>
+                                    <li><a href="#">Бургеры</a></li>
+                                    <li><a href="#">Супы</a></li>
+                                    <li><a href="#">Салаты</a></li>
+                                    <li><a href="#">Закуски</a></li>
+                                    <li><a href="#">Соусы</a></li>
+                                    <li><a href="#">Десерты</a></li>
+                                    <li><a href="#">Напитки</a></li>
+                                    <li><a href="#">Пиво</a></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="search-ingr">
+                                <div class="title">Поиск по ингредиентам<span class="arrow"></span></div>
+                                <div class="cont"><form>
+                                    <ul>
+                                        <li>
+                                            <input type="checkbox" id="si1"/><label for="si1">Тунец</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="si2"/><label for="si2">Моллюски</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="si3"/><label for="si3">Ракообразные</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="si4"/><label for="si4">Мясо</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="si5"/><label for="si5">Авокадо</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="si6"/><label for="si6">Вегетарианские</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="si7" checked/><label for="si7">Острые</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="si8"/><label for="si8">Угорь</label>
+                                        </li>
+                                    </ul>
+                                    <div class="centered"><a href="#" class="btn-with-icon btn-search"><span>искать</span></a></div>
+                                </form></div>
+                            </div>
+                            
+                            <div class="inner-block">
+                                <div class="title">Лови момент</div>
+                                <div class="bcont">
+                                    <div class="pic">
+                                        <a href="#"><img src="/img/test/1.jpg"/></a>
+                                    </div>
+                                    <div class="t1">Каппа маки терияки</div>
+                                    <div class="price">
+                                        <span class="old-price">55 <span class="rub">Р</span></span>
+                                        <span class="current-price">45 <span class="rub">Р</span></span>
+                                    </div>
+                                </div>
+                                <div class="bottom-cont">
+                                    <div class="subtitle">Осталось</div>
+                                    <div class="timer">
+                                        <div class="time">
+                                            <div class="label">минут</div>
+                                            <div class="data">23:35</div>
+                                        </div>
+                                        <div class="q">
+                                            <div class="label">штук</div>
+                                            <div class="data">15</div>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                    <div class="centered"><a href="#" class="btn">Заказать</a></div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-col">
+                            <div id="main-slider">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide slide-right">
+                                            <div class="pic" style="background-image:url(/img/slider/1.jpg)"></div>
+                                            <div class="desc valigned"><div class="vi">
+                                                <span class="title"><span>Острые роллы</span><br/><span>по бюджетной цене</span></span>                                                    
+                                                <a href="#" class="more">Узнать подробнее</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter-block">
+                                <div class="sort-field">
+                                    <select name="sort">
+                                        <option selected>по цене</option>
+                                        <option>по названию</option>
+                                    </select>
+                                </div>
+                                <div class="filter-field">
+                                    <select name="sort">
+                                        <option selected>все</option>
+                                        <option>не все</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <ul class="items">
+                                <li>
+                                    <span class="num">0002</span>
+                                    <span class="ingr-icon spicy"><span>острые</span></span>
+                                    <span class="pic"><img src="/img/items/1.png"/></span>
+                                    <span class="title valigned"><span>Каппа маки терияки Макаки серудо</span></span>
+                                    <div class="price-block">
+                                        <span class="price">1 245 Р</span>
+                                        <div class="q-block">
+                                            <span class="arrow arrow-left"></span><span class="arrow arrow-right"></span>
+                                            <input type="text" name="q" value="0"/>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="buy">Купить</a>
+                                </li>
+                                <li>
+                                    <span class="num">0002</span>
+                                    <span class="ingr-icon bird"><span>птица</span></span>
+                                    <span class="pic"><img src="/img/items/1.png"/></span>
+                                    <span class="title valigned"><span>Каппа маки терияки Макаки серудо</span></span>
+                                    <div class="price-block">
+                                        <span class="price">1 245 Р</span>
+                                        <div class="q-block">
+                                            <span class="arrow arrow-left"></span><span class="arrow arrow-right"></span>
+                                            <input type="text" name="q" value="0"/>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="buy">Купить</a>
+                                </li>
+
+                                <li>
+                                    <span class="num">0002</span>
+                                    <span class="ingr-icon spicy"><span>острые</span></span>
+                                    <span class="pic"><img src="/img/items/1.png"/></span>
+                                    <span class="title valigned"><span>Каппа маки терияки Макаки серудо</span></span>
+                                    <div class="price-block">
+                                        <span class="price">1 245 Р</span>
+                                        <div class="q-block">
+                                            <span class="arrow arrow-left"></span><span class="arrow arrow-right"></span>
+                                            <input type="text" name="q" value="0"/>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="buy">Купить</a>
+                                </li>
+                                <li>
+                                    <span class="num">0002</span>
+                                    <span class="ingr-icon bird"><span>птица</span></span>
+                                    <span class="pic"><img src="/img/items/1.png"/></span>
+                                    <span class="title valigned"><span>Каппа маки терияки Макаки серудо</span></span>
+                                    <div class="price-block">
+                                        <span class="price">1 245 Р</span>
+                                        <div class="q-block">
+                                            <span class="arrow arrow-left"></span><span class="arrow arrow-right"></span>
+                                            <input type="text" name="q" value="0"/>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="buy">Купить</a>
+                                </li>
+
+                                <li>
+                                    <span class="num">0002</span>
+                                    <span class="ingr-icon spicy"><span>острые</span></span>
+                                    <span class="pic"><img src="/img/items/1.png"/></span>
+                                    <span class="title valigned"><span>Каппа маки терияки Макаки серудо</span></span>
+                                    <div class="price-block">
+                                        <span class="price">1 245 Р</span>
+                                        <div class="q-block">
+                                            <span class="arrow arrow-left"></span><span class="arrow arrow-right"></span>
+                                            <input type="text" name="q" value="0"/>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="buy">Купить</a>
+                                </li>
+                                <li>
+                                    <span class="num">0002</span>
+                                    <span class="ingr-icon bird"><span>птица</span></span>
+                                    <span class="pic"><img src="/img/items/1.png"/></span>
+                                    <span class="title valigned"><span>Каппа маки терияки Макаки серудо</span></span>
+                                    <div class="price-block">
+                                        <span class="price">1 245 Р</span>
+                                        <div class="q-block">
+                                            <span class="arrow arrow-left"></span><span class="arrow arrow-right"></span>
+                                            <input type="text" name="q" value="0"/>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="buy">Купить</a>
+                                </li>
+
+                                <li>
+                                    <span class="num">0002</span>
+                                    <span class="ingr-icon spicy"><span>острые</span></span>
+                                    <span class="pic"><img src="/img/items/1.png"/></span>
+                                    <span class="title valigned"><span>Каппа маки терияки Макаки серудо</span></span>
+                                    <div class="price-block">
+                                        <span class="price">1 245 Р</span>
+                                        <div class="q-block">
+                                            <span class="arrow arrow-left"></span><span class="arrow arrow-right"></span>
+                                            <input type="text" name="q" value="0"/>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="buy">Купить</a>
+                                </li>
+                                <li>
+                                    <span class="num">0002</span>
+                                    <span class="ingr-icon bird"><span>птица</span></span>
+                                    <span class="pic"><img src="/img/items/1.png"/></span>
+                                    <span class="title valigned"><span>Каппа маки терияки Макаки серудо</span></span>
+                                    <div class="price-block">
+                                        <span class="price">1 245 Р</span>
+                                        <div class="q-block">
+                                            <span class="arrow arrow-left"></span><span class="arrow arrow-right"></span>
+                                            <input type="text" name="q" value="0"/>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="buy">Купить</a>
+                                </li>
+
+                                <li>
+                                    <span class="num">0002</span>
+                                    <span class="ingr-icon spicy"><span>острые</span></span>
+                                    <span class="pic"><img src="/img/items/1.png"/></span>
+                                    <span class="title valigned"><span>Каппа маки терияки Макаки серудо</span></span>
+                                    <div class="price-block">
+                                        <span class="price">1 245 Р</span>
+                                        <div class="q-block">
+                                            <span class="arrow arrow-left"></span><span class="arrow arrow-right"></span>
+                                            <input type="text" name="q" value="0"/>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="buy">Купить</a>
+                                </li>
+                            </ul><div class="clear"></div>
+                            
+                        </div>
+                        <div class="clear"></div>
+                        
+                        <div class="tabs-wrapper">
+                            <ul class="tabs">
+                                <li class="active"><span>Также рекомендуем</span></li>
+                                <li><span>С этим товаром обычно покупают</span></li>
+                                <li><span>Ранее просмотренные</span></li>
+                            </ul>
+                            <div class="clear"></div>
+                            <div class="conts">
+                                <div class="tab-cont active">
+
+                                    <ul class="items small-items">
+                                        <li>
+                                            <span class="num">0002</span>
+                                            <span class="ingr-icon spicy"><span>острые</span></span>
+                                            <span class="pic"><img src="/img/items/1.png"/></span>
+                                            <span class="title valigned"><span>Каппа маки терияки Макаки серудо</span></span>
+                                            <div class="price-block">
+                                                <span class="price">1 245 Р</span>
+                                                <div class="q-block">
+                                                    <span class="arrow arrow-left"></span><span class="arrow arrow-right"></span>
+                                                    <input type="text" name="q" value="0"/>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="buy">Купить</a>
+                                        </li>
+                                        <li>
+                                            <span class="num">0002</span>
+                                            <span class="ingr-icon bird"><span>птица</span></span>
+                                            <span class="pic"><img src="/img/items/1.png"/></span>
+                                            <span class="title valigned"><span>Каппа маки терияки Макаки серудо</span></span>
+                                            <div class="price-block">
+                                                <span class="price">1 245 Р</span>
+                                                <div class="q-block">
+                                                    <span class="arrow arrow-left"></span><span class="arrow arrow-right"></span>
+                                                    <input type="text" name="q" value="0"/>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="buy">Купить</a>
+                                        </li>
+                                        <li>
+                                            <span class="num">0002</span>
+                                            <span class="ingr-icon spicy"><span>острые</span></span>
+                                            <span class="pic"><img src="/img/items/1.png"/></span>
+                                            <span class="title valigned"><span>Каппа маки терияки Макаки серудо</span></span>
+                                            <div class="price-block">
+                                                <span class="price">1 245 Р</span>
+                                                <div class="q-block">
+                                                    <span class="arrow arrow-left"></span><span class="arrow arrow-right"></span>
+                                                    <input type="text" name="q" value="0"/>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="buy">Купить</a>
+                                        </li>
+                                        <li>
+                                            <span class="num">0002</span>
+                                            <span class="ingr-icon bird"><span>птица</span></span>
+                                            <span class="pic"><img src="/img/items/1.png"/></span>
+                                            <span class="title valigned"><span>Каппа маки терияки Макаки серудо</span></span>
+                                            <div class="price-block">
+                                                <span class="price">1 245 Р</span>
+                                                <div class="q-block">
+                                                    <span class="arrow arrow-left"></span><span class="arrow arrow-right"></span>
+                                                    <input type="text" name="q" value="0"/>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="buy">Купить</a>
+                                        </li>
+                                        <li>
+                                            <span class="num">0002</span>
+                                            <span class="ingr-icon spicy"><span>острые</span></span>
+                                            <span class="pic"><img src="/img/items/1.png"/></span>
+                                            <span class="title valigned"><span>Каппа маки терияки Макаки серудо</span></span>
+                                            <div class="price-block">
+                                                <span class="price">1 245 Р</span>
+                                                <div class="q-block">
+                                                    <span class="arrow arrow-left"></span><span class="arrow arrow-right"></span>
+                                                    <input type="text" name="q" value="0"/>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="buy">Купить</a>
+                                        </li>
+                                    </ul><div class="clear"></div>
+
+                                </div>
+                                <div class="tab-cont">
+                                    qwe
+                                </div>
+                                <div class="tab-cont">
+                                    wer
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        
+                    </div>
+                </section>
+                
+                <footer>
+                    <div class="inside-cont center-col">
+                        <div class="mainmenu">
+                            <ul>
+                                <li><a href="#" class="item-menu">Меню</a></li>
+                                <li><a href="#" class="item-specials">Акции</a></li>
+                                <li><a href="#" class="item-delivery">Доставка</a></li>
+                                <li><a href="#" class="item-about">О компании</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="outside-cont">
+                        <div class="center-col">
+                            <div class="phone">8-987-654-3210</div>
+                            <div class="card-block">
+                                <span>оплата по карте</span><br/>
+                                <span class="icon-card icon-visa"></span><span class="icon-card icon-mastercard"></span>
+                            </div>
+                            <div class="right-block valigned">
+                                <span>ОГРН 313425310700041</span>
+                            </div>
+    <!--                        <a id="sitedesign" href="http://www.web-axioma.ru/" target="_blank" title="Создание, продвижение и администрирование сайтов">Создание сайта — AXIOMA</a> -->
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </footer>
+                
+        </div></div>
+        <div class="btnUp"></div>
+    </body>
+</html>

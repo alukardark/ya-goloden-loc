@@ -1,0 +1,191 @@
+#bx_cart_block {
+    position: absolute;
+    top: 21px;
+    top: -14px;
+    right: 45px;
+    z-index: 3;
+}
+
+#bx_cart_block.fixed {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    margin-left: 257px;
+    width: 227px;
+}
+
+#bx_cart_block.fixed:before {
+    content: '';
+    position: absolute;
+    width: 140px;
+    left: 40px;
+    top: 8px;
+    height: 80px;
+    -webkit-box-shadow: 1px 0px 45px 0px rgba(225, 228, 0, 1);
+    -moz-box-shadow: 1px 0px 45px 0px rgba(225, 228, 0, 1);
+    box-shadow: 1px 0px 45px 0px rgba(225, 228, 0, 1);
+}
+
+#bx_cart_block a.bx_small_cart, #bx_cart_block a.bx_small_cart:hover {
+    display: block;
+    width: 227px;
+    height: 96px;
+    background: url(images/icon-cart.png) no-repeat center;
+    color: #fff;
+    font-weight: bold;
+    position: relative;
+    text-decoration: none;
+}
+
+.bx_small_cart .cart-inner {
+    display: block;
+    padding: 10px 0 0;
+    text-align: center;
+}
+
+.bx_small_cart .basket-link {
+    margin: 0 5px;
+    text-decoration: none;
+    font-size: 12px;
+    display: inline-block;
+    vertical-align: top;
+    color: #fff;
+    position: relative;
+    top: 3px;
+}
+
+#bx_cart_block a.bx_small_cart:hover > span {
+    opacity: 0.75;
+    filter: Alpha(opacity=75);
+}
+
+#bx_cart_block a.bx_small_cart:hover > span.arrow-down:hover {
+    opacity: 0.75;
+    filter: Alpha(opacity=75);
+}
+
+.bx_small_cart .basket-quantity {
+    font-size: 12px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    top: 3px;
+}
+
+.bx_small_cart .basket-price {
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.bx_item_listincart {
+    display: none;
+    position: absolute;
+    right: 38px;
+    top: 88px;
+    width: 350px;
+    background: #3f3f3f;
+    padding: 15px 30px;
+    -webkit-box-shadow: 0px 5px 25px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 0px 5px 25px 0px rgba(50, 50, 50, 0.75);
+    box-shadow: 0px 5px 25px 0px rgba(50, 50, 50, 0.75);
+    overflow: auto;
+    max-height: 500px;
+}
+
+.bx_cart_block a .cart-note {
+    font-size: 10px;
+    position: relative;
+    top: -5px;
+    left: 35px;
+}
+
+.bx_cart_block a[onclick] .cart-note {
+    display: none !important;
+}
+
+.bx_small_cart .arrow-down {
+    position: absolute;
+    left: 50%;
+    margin-left: -15px;
+    bottom: -2px;
+    width: 30px;
+    height: 10px;
+    background: #272727 url(images/icon-arrow-down.png) no-repeat center;
+    cursor: pointer;
+}
+
+#bx_cart_block a.bx_small_cart:hover > span.arrow-down {
+    opacity: 1;
+    filter: Alpha(opacity=100);
+}
+
+#bx_cart_block #bx_cart_block_products {
+    display: table;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#bx_cart_block .bx_itemincart {
+    display: table-row;
+    width: 100%;
+}
+
+#bx_cart_block .bx_itemincart > div {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: left;
+    padding: 4px 7px;
+    border-bottom: 2px solid #8B8B8B;
+}
+
+#bx_cart_block .bx_itemincart.total-row > div {
+    border-bottom: none;
+}
+
+#bx_cart_block .bx_itemincart > div.bx_item_delete {
+    display: none;
+}
+
+#bx_cart_block .bx_itemincart > div.bx_item_title {
+    width: 100%;
+}
+
+#bx_cart_block .bx_itemincart > div.bx_item_col_quantity {
+    text-align: right;
+    white-space: nowrap;
+}
+
+#bx_cart_block .bx_itemincart > div.bx_item_col_summ {
+    text-align: right;
+    font-size: 21px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+#bx_cart_block .bx_itemincart > div.bx_item_col_summ.total {
+    color: #FF6459;
+}
+
+#bx_cart_block .bx_button_container {
+    margin: 20px 0 5px;
+    text-align: center;
+}
+
+#bx_cart_block .bx_button_container a {
+    vertical-align: top;
+    text-align: center;
+    text-transform: lowercase;
+    color: #fff;
+    background: url('/bitrix/templates/sushman/img/btn-bg2.png') no-repeat center;
+    width: 200px;
+    display: inline-block;
+    height: 38px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 38px;
+}
+
+#bx_cart_block .bx_button_container a:hover {
+    opacity: 0.75;
+    filter: Alpha(opacity=75);
+}

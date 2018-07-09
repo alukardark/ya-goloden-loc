@@ -1,0 +1,7 @@
+AuthType Basic
+AuthName "/www/test.ya-goloden.ru/webstat"
+AuthUserFile /var/www/user73009/data/etc/105911506.passwd
+DirectoryIndex index.html
+<Limit GET POST>
+	require valid-user
+</Limit>

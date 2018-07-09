@@ -1,0 +1,1 @@
+<a href="http://vk.com/sushman3195555" target="_blank" rel="nofollow" id="btn-vk" class="nsk"></a>

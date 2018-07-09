@@ -1,0 +1,87 @@
+ Options -Indexes 
+ErrorDocument 404 /404.php
+php_value max_input_vars 10000
+<IfModule mod_php5.c>
+  php_flag session.use_trans_sid off
+  #php_value display_errors 1
+  #php_value mbstring.internal_encoding UTF-8
+php_flag display_startup_errors on
+php_flag display_errors on
+php_flag html_errors on
+
+</IfModule>
+
+php_value auto_prepend_file "/home/bitrix/www/bitrix/modules/security/tools/start.php"
+
+<IfModule mod_rewrite.c>
+  Options +FollowSymLinks
+  RewriteEngine On
+
+RewriteCond %{REQUEST_URI} ^/menu/rolly_dlya_setov/$
+RewriteRule ^menu/rolly_dlya_setov/$ /menu [R=301,L]
+
+#RewriteBase /
+#RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+#RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^nk\.ya-goloden\.ru$ [NC]
+RewriteRule	robots.txt /robots-nk.txt [L]
+RewriteCond %{HTTP_HOST} ^nsk\.ya-goloden\.ru$ [NC]
+RewriteRule	robots.txt /robots-nsk.txt [L]
+RewriteCond %{HTTP_HOST} ^kem\.ya-goloden\.ru$ [NC]
+RewriteRule	robots.txt /robots-kem.txt [L]
+
+RewriteCond %{HTTP_HOST} ^nk\.ya-goloden\.ru$ [NC]
+RewriteRule	^sitemap.xml$ /nkz-sitemap.xml [L]
+RewriteCond %{HTTP_HOST} ^nsk\.ya-goloden\.ru$ [NC]
+RewriteRule	^sitemap.xml$ /nsk-sitemap.xml [L]
+RewriteCond %{HTTP_HOST} ^kem\.ya-goloden\.ru$ [NC]
+RewriteRule	^sitemap.xml$ /kem-sitemap.xml [L]
+
+
+
+RewriteCond %{QUERY_STRING} ^$
+RewriteRule ^index\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^$
+RewriteRule ^(.+/)index\.php$ /$1 [L,R=301]
+RewriteCond %{QUERY_STRING} ^$
+RewriteRule ^((/?[^\./]+)+)$ /$1/ [L,R=301]
+
+RewriteCond %{QUERY_STRING} ^$
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} [A-Z]
+RewriteRule (.*) rewrite-strtolower.php?url=$1 [QSA,L,NE]
+
+
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -l [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteCond %{REQUEST_FILENAME} [\xC2-\xDF][\x80-\xBF] [OR]
+RewriteCond %{REQUEST_FILENAME} \xE0[\xA0-\xBF][\x80-\xBF] [OR]
+RewriteCond %{REQUEST_FILENAME} [\xE1-\xEC\xEE\xEF][\x80-\xBF]{2} [OR]
+RewriteCond %{REQUEST_FILENAME} \xED[\x80-\x9F][\x80-\xBF] [OR]
+RewriteCond %{REQUEST_FILENAME} \xF0[\x90-\xBF][\x80-\xBF]{2} [OR]
+RewriteCond %{REQUEST_FILENAME} [\xF1-\xF3][\x80-\xBF]{3} [OR]
+RewriteCond %{REQUEST_FILENAME} \xF4[\x80-\x8F][\x80-\xBF]{2}
+RewriteCond %{REQUEST_FILENAME} !/bitrix/virtual_file_system.php$
+RewriteRule ^(.*)$ /bitrix/virtual_file_system.php [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-l
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !/bitrix/urlrewrite.php$
+  RewriteRule ^(.*)$ /bitrix/urlrewrite.php [L]
+  RewriteRule .* - [E=REMOTE_USER:%{HTTP:Authorization}]
+</IfModule>
+
+<IfModule mod_dir.c>
+  DirectoryIndex index.php index.html
+</IfModule>
+
+<IfModule mod_expires.c>
+  ExpiresActive on
+  ExpiresByType image/jpeg "access plus 3 day"
+  ExpiresByType image/gif "access plus 3 day"
+  ExpiresByType image/png "access plus 3 day"
+  ExpiresByType text/css "access plus 3 day"
+  ExpiresByType application/javascript "access plus 3 day"  
+</IfModule>

@@ -1,0 +1,42 @@
+#news-list img.preview_picture
+{
+	float:left;
+	margin:0 4px 6px 0;
+}
+#news-list li.clear {
+    float:none;
+    clear:both;
+    height:1px;
+    width:auto;
+    margin:0;
+}
+
+#news-list > li {
+    float:left;
+    list-style:none;
+    padding:0;
+    margin:35px;
+    width:355px;
+}
+#news-list > li:before {
+    display:none;
+}
+#news-list .image, #news-list .image img {
+    width:355px;
+    height:155px;
+}
+#news-list .image {
+    margin-bottom:10px;
+}
+#news-list .image img {
+    border-radius:5px;
+}
+#news-list > li .title {
+    display:inline-block;
+    text-decoration:none;
+}
+#news-list > li .short-text {
+    margin-top:5px;
+    opacity:0.75;
+    filter:Alpha(opacity=75);
+}

@@ -1,0 +1,1 @@
+<a href="http://vk.com/sushman_kemerovo" target="_blank" rel="nofollow">http://vk.com/sushman_kemerovo</a></div>
